@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> This is Title </title>
+</head>
+<!-- below formatting is using Internal CSS -->
+<style> 
+    body {background-color:powderblue;}
+    <!-- below formatting is using Internal CSS -->
+	h2   {color: blue;font-family: verdana;font-size: 200%;}
+	<!-- below formatting is using Internal CSS -->
+    p    {color: red;border: 1px solid red;padding: 10px;}
+    table, th, td {border: 1px solid black;border-collapse: collapse;padding: 75px;}
+    .cities {
+  		background-color: black;
+  		color: white;
+  		margin: 20px;
+  		padding: 20px;
+			}
+	/* Style the element with the id "myHeader" */
+	#myHeader {
+  		background-color: lightblue;
+ 		color: black;
+  		padding: 40px;
+  		text-align: center;
+}
+
+</style>
+
+<body>
+<!-- HEADING LEVELS H1.....H6-->
+	<h1> <b> This is heading 1 </h1>
+	<h2> <i>This is heading 2</h2>
+	<h3> <small>This is heading 3</h3>
+	<h4> <mark>This is <sub>subscripted</sub> heading 4</h4>   
+	<h5> This is <sup>superscripted</sup> heading 5</h5>
+	<h1>  This is heading 1 without bold </h1>
+	
+	<!-- bNORMAL PARAGRAPH -->
+	<p> this is normal paragraph</p>
+
+	<!-- PARAGRAPH WITH LINEW BREAK TAG -->
+	<p>  this is <br> line break paragraph </p>
+	
+	<!-- PREDEFINED FORMAT PARAGRAPH -->
+	<pre> This is predefined line paragraph </pre>
+
+	<!-- BLOCK QUATATION -->
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization.
+    </blockquote>
+
+<!-- ABBREVATION  TAG-->
+    <p>  The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<!-- ADDRESS TAG -->
+     <address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+     </address> 
+
+     <!-- SINGLE LINER QUATATION-->
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+     <bdo dir="rtl">This line will be written from right to left</bdo> <br> 
+
+<!-- LINK TAG WITH TARGET TITLE ATTRIBUTE-->
+	<a href="https://www.w3schools.com" target="_blank" title="Go to W3Schools HTML section">  This is a w3school weblink </a>
+	<br>
+<!-- LINK TAG WITH CLIACKABLE IMAGE-->
+	<a href="https://www.w3schools.com" target="_blank">  This is a link 2 , click on image    <br> <img src="abc.jpg" height="200" width="300" alt="this is alternate text"> </a>
+<!-- LINKS TO BOOK MARKS-->
+	<p> <a href="#C4">Jump to Chapter 1</a> </p>
+	<p> <a href="#C10">Jump to Chapter 2</a> </p>
+
+<!-- IMAGE TAG WITH IMAGE ON  ANOTHER SERVER-->
+	<hr>
+	<img src="https://c.ndtvimg.com/2019-10/cgcnl1c_virat-kohli-pti_625x300_26_October_19.jpg" height="200" width="300" alt="this is alternate text">
+
+	<!-- Unordered HTML LIST -->
+	<ul style= "list-style-type:circle;">
+		<li>coffee</li>
+		<li>tea</li>
+		<li>greentea</li>
+	</ul>
+<!-- Ordered HTML LIST -->
+	<ol type="A">
+		<li>coffee</li>
+		<li>tea</li>
+		<li>greentea</li>
+	</ol>
+<!-- Nested  HTML LIST -->
+	<ul>
+		<li>Coffee</li>
+		<li>Tea
+    		<ol>
+      			<li>Black tea</li>
+      			<li>Green tea</li>
+    		</ol>
+  		</li>
+  		<li>Milk</li>
+	</ul>
+
+	<!--  HTML Descrition LIST -->
+	 <dl>
+	 	<dt>Coffee</dt>
+  		<dd> Black hot drink</dd>
+  		<dt>Milk</dt>
+  		<dd> White cold drink</dd>
+		</dl> 
+<!-- ID attribute for creating bookmarks -->
+	<h2 id="C4" >Chapter 1</h2>
+    <!-- <p>This chapter explains ba bla bla</p> -->
+
+    <h2 id="C10">Chapter 2</h2>
+ 
+    <br>
+<!-- TABLE TAG  WITH CAPTION ATTRIBUTES-->
+    <table style="width:100%">
+    	<caption>employee details </caption>
+    	<tr>
+    		<th>Firstname</th>
+    		<th>Lastname</th>
+    		<th>Age</th>
+    		<th colspan="2">Telephone</th>
+
+  		</tr>
+  		<tr>
+    		<td>Jill</td>
+    		<td>Smith</td>
+   			<td>50</td>
+   			<td>55577854</td>
+            <td>55577855</td>
+  		</tr>
+
+  		<tr>
+    		<td>Eve</td>
+    		<td>Jackson</td>
+    		<td>94</td>
+  		</tr>
+	</table> 
+
+  		<br>
+  		<br>
+  		<br>
+<!-- Block-level Elements-->
+<div style="border: 1px solid black">Hello World</div>
+  <br>
+  <br>
+  <br>
+
+<!-- html forms-->
+<form  action="/action_page.php" target="_blank" method="get">
+ 	<fieldset>
+		<legend>Personal information:</legend>
+  		First name:<br>
+  		<input type="text" name="firstname" value="Mickey"><br>
+  		Last name:<br>
+  		<input type="text" name="lastname" value="Mouse"><br><br>
+		Password:<br>
+  		<input type="password" name="Password" value="nitin"><br><br>
+ 
+
+  		<input type="radio" name="gender" value="male" checked> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="other"> Other
+  		<br>
+  		<br>
+
+  		<select name="cars" size="3" multiple>
+    		<option value="volvo"selected >Volvo</option>
+    		<option value="saab">Saab</option>
+    		<option value="fiat">Fiat</option>
+    		<option value="audi">Audi</option>
+  		</select>
+
+  		<br>
+  		E-mail:
+  		<input type="email" name="email">
+  		<br>
+  		<br>
+  		<br>
+  		 Enter a date before 1980-01-01:
+  		<input type="date" name="bday" max="1979-12-31"><br><br><br>
+  		Enter a date after 2000-01-01:
+  		<input type="date" name="bday" min="2000-01-02"><br><br><br>
+  		<input type="checkbox" name="vehicle1" value="Bike">I have a bike
+		<br><br>
+		<input type="checkbox" name="vehicle2" value="Car">I have a car 
+  		<br><br><br><br>
+  		 <input type="submit" value="Submit">
+
+
+
+  </fieldset>
+
+  		<br>
+  		<br>
+  		<br>
+
+   		<button type="button" onclick="alert('Hello World!')">Click Me!
+ 		</button> 
+
+
+</form> 
+
+  		<br>
+  		<br>
+  		<br>
+<!-- html iFrame-->
+
+<iframe src= "https://www.ibm.com" height="500" width="600"> 
+</iframe>
+
+<p>An HTML page can only have one unique id applied to one specific element, while a class name can be applied to multiple elements.</p>
+
+<!-- A unique element -->
+<h1 id="myHeader">My Cities</h1>
+
+<div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
